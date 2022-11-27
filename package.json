@@ -2,8 +2,10 @@
   "name": "star-wars-web",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
+    "ng": "node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng",
+    "start": "npm run start-dev",
+    "start-dev": "ng serve -c=dev --host localhost --port 4201  --disable-host-check --watch",
+    "start-prod": "ng serve --open -c=prod",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -11,10 +13,12 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.1.0",
+    "@angular/cdk": "^13.3.9",
     "@angular/common": "~13.1.0",
     "@angular/compiler": "~13.1.0",
     "@angular/core": "~13.1.0",
     "@angular/forms": "~13.1.0",
+    "@angular/material": "^13.3.9",
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
