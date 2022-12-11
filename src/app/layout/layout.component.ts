@@ -39,8 +39,8 @@ export class LayoutComponent implements OnInit {
         {
           title: 'films',
           icon: 'people',
-          color: '#ff7f0e',
           link: '/films',
+          color: '#ff7f0e',
         },
       ],
     },

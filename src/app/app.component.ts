@@ -5,16 +5,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class AppComponent {
 
   title = 'star-wars-web';
 
-  ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
-  }
-
-  ngOnInit(): void {
-    console.log("Passou aqui - AppComponent");
-    throw new Error('Method not implemented.');
-  }
 }

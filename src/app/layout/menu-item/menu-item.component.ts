@@ -7,12 +7,12 @@ import { Menu } from './menu.model';
   styleUrls: ['./menu-item.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class MenuItemComponent implements OnInit {
+export class MenuItemComponent implements OnInit{
 
   @Input() menu: Menu = [];
 
   ngOnInit(): void {
-    console.log("Passou aqui - MenuItemComponent", this.menu);
+    console.log('Menu.', this.menu);
   }
 
 }

@@ -6,6 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./page-header.component.css']
 })
 export class PageHeaderComponent {
+
   @Input() icon?: string;
 
 }
